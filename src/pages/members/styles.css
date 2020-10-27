@@ -1,0 +1,113 @@
+#page-members {
+  width: 100vw;
+  height: 100vh;
+  max-width: 900px;
+}
+
+.members-container main {
+  margin: 0 auto;
+  width: 97%;
+  margin-bottom: 1rem;
+}
+
+.member {
+  display: grid;
+  grid-gap: 1rem;
+  border: 1px solid rgb(214, 129, 0);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  justify-content: left;
+}
+
+.member img {
+  width: 15rem;
+  height: 18rem;
+  grid-area: img;
+}
+
+.member .member-login {
+  grid-area: login;
+  font-size: 3.0rem;
+  margin-right: 2rem;
+  min-width: 20rem;
+}
+
+.member .member-name {
+  grid-area: name;
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.member .member-email {
+  grid-area: email;
+  font-size: 2rem;
+}
+
+.member .member-bio {
+  grid-area: bio;
+  font-size: 2rem;
+}
+
+.member {
+  grid-template-areas: 
+    "img identification"
+    "img email"
+    "img bio";
+}
+
+.loader {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.member #identification {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 570px) {
+  .member .member-login {
+    min-width: initial;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+    
+
+  .member #identification {
+    display: block;
+  }
+
+  .member .member-bio {
+    overflow-y: scroll;
+    max-height: 7rem;
+    max-width: 100%;
+  }
+
+  .member .member-name {
+    grid-area: login;
+    font-size: 2rem;
+    max-width: 90%;
+  }
+
+  .member .member-email {
+    max-width: 18rem;
+    font-size: 1.8rem;
+  }
+
+  .member .member-login {
+    grid-area: login;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {  
+  .member {
+    word-wrap: break-word;
+    border: none;
+  }
+  .member .member-login {
+    max-width: 10rem;
+  }
+}

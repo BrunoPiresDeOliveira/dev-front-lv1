@@ -1,0 +1,21 @@
+#page-about {
+  width: 100vw;
+  height: 100vh;
+  max-width: 900px;
+}
+
+.about-content {
+  width: 97%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#page-about .about-content h2 {
+  margin-bottom: 1rem;
+}
+
+#page-about .about-content p {
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+}

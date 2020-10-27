@@ -1,0 +1,46 @@
+#page-home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-home-content img {
+  width: 50rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem -0.5rem 0;
+  text-align: center;
+}
+
+.buttons-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22rem;
+  height: 10rem;
+  border-radius: 0.8rem;
+  background: var(--color-orange);
+  text-decoration: none;
+  font: 700 4rem Roboto;
+  color: var(--color-letter-button)
+}
+
+@media only screen and (max-width: 415px) {  
+  .page-home-content {
+    width: 20rem;
+  }
+  
+  .page-home-content img {
+    width: 20rem;
+  }
+
+  .buttons-container a {
+    width: 10rem;
+    font: 700 2rem Roboto;
+  }
+}

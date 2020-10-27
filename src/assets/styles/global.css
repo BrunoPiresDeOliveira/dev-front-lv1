@@ -1,0 +1,34 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+:root {
+  font-size: 60%;
+  --color-background: #whitesmoke;
+  --color-orange: rgb(255, 154, 0);
+  --color-letter-button: rgb(32, 43, 60);
+  --color-background-top-bar: rgb(80, 90, 104);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body, input, button, textarea {
+  font: 500 1.6rem Roboto;
+}
+
+@media (min-width: 900px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
