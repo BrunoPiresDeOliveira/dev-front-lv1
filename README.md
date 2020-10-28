@@ -36,7 +36,7 @@ Essa aplicação deve mostrar de uma forma amigável os membros do repositório 
 Fique a vontade para definir o padrão de cores a ser utilizada, a única exigencia e que respeite o layout abaixo em uma tela de desktop, o layout em telas menores como smart fones pode ser redesenhado contanto que fique de forma fácil a visualização das informações.
 
 **Ex. Layout**
-![Layout](./doc/layout.png)
+![Layout](https://github.com/stit/dev-front-lv1/raw/master/doc/layout.png)
 
 ## Detalhes sobre o projeto
 

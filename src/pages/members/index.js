@@ -15,17 +15,21 @@ class Members extends React.Component {
 	}
 
 	async componentDidMount() {
-		const response = await api.get('/orgs/aws/members')
-    const logins = response.data.map(member => member.login)
+    try {
+      const response = await api.get('/orgs/aws/members')
+      const logins = response.data.map(member => member.login)
 
-    const members = []
-		for (const login of logins) {
-			const memberData = await api.get(`/users/${login}`)
-			members.push(memberData)
+      const members = []
+      for (const login of logins) {
+        const memberData = await api.get(`/users/${login}`)
+        members.push(memberData)
+      }
+
+      this.setState({ members })
+      this.setState({ loading: false })
+    } catch (error){
+      console.error(error)
     }
-
-		this.setState({ members })
-		this.setState({ loading: false })
 	}
 
 	render() {
